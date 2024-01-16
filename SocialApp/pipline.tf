@@ -29,24 +29,8 @@ resource "aws_codebuild_project" "codebuild" {
 
   source {
     type = "CODEPIPELINE"
-    buildspec =
-      "version": 0.2
-      phases:
-        install:
-          runtime-versions:
-            python: 3.8
-        pre_build:
-          commands:
-      - aws cloudformation validate-template --template-body file://Group3-Part2-Stack.yml
-  build:
-    commands:
-      - echo Build started on "date"
-      - aws s3 cp WebApp s3://${aws_s3_bucket.buildartifactbucket.bucket}/WebApp --recursive
-      - aws s3 cp Group3-Part2-Stack.yml s3://${aws_s3_bucket.buildartifactbucket.bucket}/Group3-Part2-Stack.yml
-
   }
 
- 
 }
 
 # AWS CodePipeline
