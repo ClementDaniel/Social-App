@@ -29,5 +29,6 @@ Lambda triggers allow for event-driven, scalable architectures that can grow or 
 ## Monitoring and Management
 CloudWatch offers insights into application performance and operational health, enabling teams to react swiftly to any metrics outside of the expected thresholds.
 CodePipeline and CloudWatch can be configured to provide notifications on the CI/CD process, allowing teams to keep abreast of the deployment status and any issues that arise.
+## Design Diagram
 ![Social App drawio (1)](https://github.com/ClementDaniel/Social-App/assets/96403532/a46a26e9-a50e-42cc-a85d-bd42cbd1c16a)
 
